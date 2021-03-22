@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fs</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+</body>
+<script>
+let Circle = function(radius) {
+  this.radius = radius;
+  this.getRadius = function() {
+    return radius;
+  }
+  this.getArea = function() {
+    return Math.PI * radius * radius;}
+}
+let circle = new Circle(4);
+let radius = circle.getRadius(); // 2
+
+let area = circle.getArea(); // 12.566370614359172
+let HinhTron1 = new Circle(10)
+let radius1 = HinhTron1.getRadius() // 10
+let area1 = HinhTron1.getArea() // 314
+alert("radius: " + radius + "; area: " + area);
+alert("radius: " + radius1 + "; area: " + area1)
+</script>
+</html>
